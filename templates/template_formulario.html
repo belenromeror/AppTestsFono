@@ -1,0 +1,32 @@
+<form method="post">
+    {% csrf_token %}
+    {{ formulario.as_p }}
+    <button type="submit">Guardar</button>
+</form>
+
+<h2>Ingresar Funciones Prelinguísticas</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.respiracion_modo.label_tag }}
+    {{ form.respiracion_modo }}
+    {{ form.tipo_respiracion.label_tag }}
+    {{ form.tipo_respiracion }}
+    {{ form.tipo_deglucion.label_tag }}
+    {{ form.tipo_deglucion }}
+    <!-- Agrega más campos de opciones según sea necesario -->
+    <button type="submit">Guardar</button>
+</form>
+
+
+<h2>Ingresar Órganos Fonoarticulatorios</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.mejillas.label_tag }}
+    {{ form.mejillas }}
+    {{ form.nariz.label_tag }}
+    {{ form.nariz }}
+    {{ form.maxilarinf.label_tag }}
+    {{ form.maxilarinf }}
+    <!-- Agrega aquí más campos de opciones según sea necesario -->
+    <button type="submit">Guardar</button>
+</form>

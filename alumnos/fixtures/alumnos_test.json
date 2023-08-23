@@ -1,0 +1,22 @@
+[
+  {
+    "model": "alumnos.alumno",
+    "pk": 1,
+    "fields": {
+      "nombres": "Belén Andrea",
+      "apellidos": "Romero Rodríguez",
+      "fecha_nacimiento": "1994-04-27",
+      "curso": "Egresado"
+    }
+  },
+  {
+    "model": "alumnos.alumno",
+    "pk": 2,
+    "fields": {
+      "nombres": "Ramon",
+      "apellidos": "Cito",
+      "fecha_nacimiento": "2020-01-01",
+      "curso": "Primero básico"
+    }
+  }
+]

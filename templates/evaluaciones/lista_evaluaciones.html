@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<table>
+    <tr>
+        <th>Nombre Alumno</th>
+        <th>Curso Alumno</th>
+        <th>Fecha Evaluación</th>
+        <th>Informe</th>
+    </tr>
+    {% for evaluacion in object_list %}
+        <tr>
+            <td>{{evaluacion.alumno.nombre_completo}}</td>
+            <td>{{evaluacion.alumno.curso}}</td>
+            <td>{{evaluacion.fecha_evaluacion}}</td>
+            <td>
+                <a href="{% url 'mostrar_informe' evaluacion.id %}">Ver</a>
+            </td>
+        </tr>
+    {% endfor %}
+
+    {% endblock %}

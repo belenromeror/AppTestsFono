@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+    <title>Informe Fonoaudiológico</title>
+    <!-- Aquí puedes enlazar tus hojas de estilo CSS si lo deseas -->
+</head>
+<body>
+    <header style="text-align:center;">
+        <h1>INFORME DE EVALUACIÓN FONOAUDIOLÓGICA</h1>
+    </header>
+
+    <section id="antecedentes-personales">
+        <h2>1. ANTECEDENTES PERSONALES:</h2>
+        <p><strong>Nombre del Alumno:</strong> {{alumno.nombre_completo}}</p>
+        <p><strong>Fecha de Nacimiento:</strong> {{alumno.fecha_nacimiento}}</p>
+        <p><strong>Edad:</strong> {{alumno.edad}}</p>
+        <p><strong>Fecha de Evaluación:</strong> {{fecha_evaluacion}}</p>
+    </section>
+
+    <section id="antecedentes-evaluacion">
+        <h2>2.- ANTECEDENTES DE LA EVALUACIÓN FONOAUDIOLÓGICA</h2>
+        <p> Protocolos utilizados: </p>
+    </section>
+
+    <section id="resultados">
+        <h2>Resultados de la Evaluación Fonoaudiológica</h2>
+        <h3> Analisis Cuantitativo</h3>
+      <table border="1" align="center" >
+        <thead>
+            <tr>
+                <th>TEST</th>
+                <th>PTJE. TOTAL</th>
+                <th>DESV. ESTANDAR</th>
+                <th>PERC.</th>
+                <th>RANGO DE EDAD</th>
+                <th>DESEMPEÑO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>TEPROSIF-R</td>
+                <td>{{resultado_evaluacion.teprosif.total}}</td>
+                <td>{{resultado_evaluacion.teprosif.desv_estandar}}</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>STSG (RECEP)</td>
+                <td>{{resultado_evaluacion.stsg_r.total}}</td>
+                <td>{{resultado_evaluacion.stsg_r.desv_estandar}}</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>STSG (EXPR.)</td>
+                <td>{{resultado_evaluacion.stsg_e.total}}</td>
+                <td>{{resultado_evaluacion.stsg_e.desv_estandar}}</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>TECAL (TOTAL)</td>
+                <td>{{resultado_evaluacion.tecal.total}}</td>
+                <td>{{resultado_evaluacion.tecal.desv_estandar}}</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    </section>
+
+    <h3> Analisis Cualitativo</h3>
+    <h4> <strong> Sintesis Evaluación Fonoaudiológica </strong></h4>
+
+    <h4> Organos Fonoarticulatorios:</h4>
+     <h4> Audición:</h4>
+    <h4> Antecedentes del habla: </h4>
+    <li> Velocidad del habla</li>
+    <li>Fluidez</li>
+    <li> Ritmo de habla</li>
+    <li>Inteligibilidad</li>
+    <li> Procesos motores básicos:</li>
+    <blockquote>
+      <li>Respiración </li>
+    <li> Fonación</li>
+    <li> Resonancia</li>
+    <li> Control motor oral y articulación:</li>
+    <li> Prosodia:</li>
+    </blockquote>
+
+    <h4>Descripción de las conductas lingüísticas del niño en relación a los siguientes aspectos:</h4>
+
+    <h4><strong> Nivel fonético-fonológico: </strong> </h4>
+      <h4><strong> Nivel morfosintáctico: </strong> </h4>
+      <h4><strong> Nivel semántico: </strong> </h4>
+      <h4><strong> Nivel pragmático: </strong> </h4>
+
+    <h3> 3.- RESULTADOS DE LA EVALUACIÓN FONOAUDIOLÓGICA</h3>
+    <h4> Diagnóstico:</h4>
+    <h4> Indicaciones:</h4>
+    <h4> Derivación</h4>
+    <h4> Nombre del profesional:</h4>
+    <h4> Registro SECREDUC: </h4>
+
+
+
+
+
+    <footer>
+        <p>Firma y timbre:</p>
+        <!-- Puedes agregar aquí la firma y timbre si es necesario -->
+    </footer>
+</body>
+</html>
